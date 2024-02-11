@@ -100,5 +100,53 @@
 	cursor: pointer;
 	border-radius: 30px;
 	background: #262121;
+}
+
+.image-gallery{
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	padding: 0 15px;
+	max-width: 1250px;
+	margin: 50px 0;
+	justify-content: center;
+}
+
+.image-gallery .img-card {
+	width: 285px;
+	aspect-ratio: 1 /1;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.image-gallery .img-card img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.image-gallery .img-card .download-btn{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: #fff;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-gallery .img-card:hover .download-btn{
+	display: flex;
+
+}
+
+.image-gallery .img-card .download-btn img{
+	width: 14px;
+	height: 14px;
 
 }
